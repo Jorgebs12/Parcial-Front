@@ -2,6 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $Agenda from "./routes/Agenda.tsx";
 import * as $AgendaClient from "./routes/AgendaClient.tsx";
 import * as $AgendaServer from "./routes/AgendaServer.tsx";
 import * as $_404 from "./routes/_404.tsx";
@@ -13,6 +14,7 @@ import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
+    "./routes/Agenda.tsx": $Agenda,
     "./routes/AgendaClient.tsx": $AgendaClient,
     "./routes/AgendaServer.tsx": $AgendaServer,
     "./routes/_404.tsx": $_404,
